@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "OnboardingView.registerButton.getter:OnboardingView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "firstName.isEmpty || lastName.isEmpty || email.isEmpty || self.isNotValidEmail(email)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OnboardingView.validateEmail(_:):OnboardingView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "OnboardingView.isNotValidEmail(_:):OnboardingView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "firstName.isEmpty || lastName.isEmpty || email.isEmpty || self.isNotValidEmail(email)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
