@@ -82,12 +82,11 @@ struct OnboardingView: View {
     
     
     private var heroView: some View {
-        VStack(alignment:.leading) {
+        VStack(alignment:.leading, spacing: 0.0) {
             Text("Little Lemon")
                 .font(.system(size: 44.0))
                 .bold()
                 .foregroundColor(lemonColor)
-           
             HStack {
                 VStack(alignment:.leading) {
                     Text("Chicago")
@@ -107,9 +106,10 @@ struct OnboardingView: View {
                     .scaledToFit()
                     .frame(width:150.0, height:150.0)
                     .cornerRadius(10.0)
-            }.background(greenColor)
+            }
+            .padding(.top,0)
+            .background(greenColor)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                 .foregroundColor(.secondary)
                 .background(greenColor)
                 .cornerRadius(6.0)

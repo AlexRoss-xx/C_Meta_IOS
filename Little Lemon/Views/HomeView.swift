@@ -81,21 +81,24 @@ struct HomeView: View {
     }
     
     private var heroView: some View {
-        VStack(alignment:.leading) {
+        VStack(alignment:.leading, spacing: 0.0) {
             Text("Little Lemon")
                 .font(.system(size: 44.0))
                 .bold()
-                .foregroundColor(Color(red: 242/255, green: 197/255, blue: 50/255))
-            Text("Chicago")
-                .font(.system(size: 26.0))
-                .fontWeight(.semibold)
-                .foregroundColor(.white)
+                .foregroundColor(lemonColor)
             HStack {
-                Text("We are a family owned\nMediterranean restaurant,\nfocused on traditional\nrecipes served with a\nmodern twist.")
-                    .font(.system(size: 16.0))
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .fixedSize(horizontal: false, vertical: true)
+                VStack(alignment:.leading) {
+                    Text("Chicago")
+                        .font(.system(size: 26.0))
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .padding(.bottom,20)
+                    Text("We are a family owned\nMediterranean restaurant,\nfocused on traditional\nrecipes served with a\nmodern twist.")
+                        .font(.system(size: 14.0))
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
                 Spacer()
                 Image("heroMainDish")
                     .resizable()
@@ -103,7 +106,7 @@ struct HomeView: View {
                     .frame(width:150.0, height:150.0)
                     .cornerRadius(10.0)
             }
-            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding([.bottom],20)
             HStack {
                 Image(systemName: "magnifyingglass")
                 TextField("What's on your mind ?", text: $searchText)
