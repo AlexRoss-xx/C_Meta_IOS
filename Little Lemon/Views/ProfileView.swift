@@ -228,7 +228,7 @@ struct ProfileView: View {
                 .foregroundColor(.black)
                 .cornerRadius(6.0)
         })
-        .padding([.top, .bottom], 16.0)
+        .padding([.top], 16.0)
     }
     
     private var saveChangesButton: some View {
@@ -249,7 +249,7 @@ struct ProfileView: View {
                 .background(greenColor)
                 .foregroundColor(.white)
                 .cornerRadius(6.0)
-        }) .padding()
+        })
     }
     
     private var discardChangesButton: some View {
